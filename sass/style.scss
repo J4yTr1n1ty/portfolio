@@ -352,6 +352,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-skills,
 #fh5co-started,
 #fh5co-work,
+#fh5co-references,
 #fh5co-broadcast-work,
 #fh5co-blog,
 #fh5co-pricing,
@@ -741,6 +742,37 @@ h1, h2, h3, h4, h5, h6, figure {
   	}
 }
 
+// References
+.reference-author-picture{
+  text-align: center;
+  
+	@media screen and (max-width: $screen-sm){
+		height: 400px;
+	}
+	@media screen and (max-width: $screen-xs){
+		height: 270px;
+	}
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    position: relative;
+    display: table;
+    overflow: hidden;
+    height: 100%;
+    width: 200px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: none;
+  }
+}
+
+.centered-row {
+  display: flex;
+  justify-content: center;
+}
+
 // WORK
 .work{
 	background-size: contain;
@@ -839,8 +871,6 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 }
 
-
-//PRICING
 
 // BLOG
 .fh5co-blog{
